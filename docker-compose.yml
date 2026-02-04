@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  transcriber:
+    build: .
+    container_name: audio-transcriber
+    volumes:
+      # Mount current directory to get output files
+      - ./:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1

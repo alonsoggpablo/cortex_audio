@@ -1,0 +1,9 @@
+*.txt
+!requirements.txt
+__pycache__
+*.pyc
+.git
+.gitignore
+Dockerfile
+.dockerignore
+*:Zone.Identifier
