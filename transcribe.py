@@ -80,7 +80,7 @@ def summarize_text(text, max_length=200, min_length=50):
 
 def main():
     # Input audio file
-    audio_file = "CG-20260202.mp3"
+    audio_file = os.getenv("AUDIO_FILE", "CG-20260203.mp3")
     
     # Check if file exists
     if not os.path.exists(audio_file):
