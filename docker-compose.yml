@@ -9,3 +9,4 @@ services:
       - ./:/app/output
     environment:
       - PYTHONUNBUFFERED=1
+      - OUTPUT_DIR=/app/output
